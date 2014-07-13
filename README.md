@@ -29,3 +29,10 @@ Error module
     error.setPayload foo: "Foo", bar: "Bar"
     assert.equal "Foo", error.payload.foo
     assert.equal "Bar", error.payload.bar
+
+## The NotImplemented Error
+
+    error = new BocoError.NotImplemented()
+    assert.equal "NotImplemented", error.name
+    assert.equal "Not implemented.", error.message
+    
