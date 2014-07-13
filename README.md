@@ -35,4 +35,3 @@ Error module
     error = new BocoError.NotImplemented()
     assert.equal "NotImplemented", error.name
     assert.equal "Not implemented.", error.message
-    
