@@ -14,5 +14,8 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bocodigitalmedia/boco-error/issues"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.6.3"
   }
 }
