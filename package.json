@@ -1,0 +1,18 @@
+{
+  "name": "boco-error",
+  "version": "0.0.1",
+  "description": "Error module",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "./node_modules/coffee-script/bin/coffee -l README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/bocodigitalmedia/boco-error.git"
+  },
+  "author": "Christian Bradley <christianbradley@gmail.com> (https://github.com/christianbradley)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bocodigitalmedia/boco-error/issues"
+  }
+}
