@@ -1,4 +1,4 @@
-module.exports = class CustomError
+class CustomError
 
   constructor: (props = {}) ->
     Error.call this
@@ -6,14 +6,17 @@ module.exports = class CustomError
       Error.captureStackTrace this, @constructor
     @name = props.name
     @message = props.message
-    @occurredAt = props.occurredAt
     @setPayload props.payload
     @setDefaults()
 
   setDefaults: ->
     @name = @constructor.name unless @name?
     @message = "An error has occurred." unless @message?
-    @occurredAt = new Date() unless @occurredAt?
 
-  setPayload: (payload = {}) ->
-    @payload = payload
+  setPayload: (params) ->
+    @payload = @constructPayload params
+
+  constructPayload: (params = {}) ->
+    return params
+
+module.exports = CustomError

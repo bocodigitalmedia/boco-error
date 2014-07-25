@@ -1,6 +1,6 @@
 {
   "name": "boco-error",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Error module",
   "main": "lib/index.js",
   "scripts": {
