@@ -11,7 +11,6 @@ class CustomError
 
   setDefaults: ->
     @name = @constructor.name unless @name?
-    @message = "An error has occurred." unless @message?
 
   setPayload: (params) ->
     @payload = @constructPayload params

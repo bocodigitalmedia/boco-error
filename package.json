@@ -1,11 +1,11 @@
 {
   "name": "boco-error",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Error module",
   "main": "lib/index.js",
   "scripts": {
     "test": "./node_modules/coffee-script/bin/coffee -l README.md",
-    "compile": "./node_modules/coffee-script/bin/coffee -c -m -o lib/ coffee/"
+    "compile": "rm -r lib && mkdir lib && ./node_modules/coffee-script/bin/coffee -c -m -o lib/ coffee/"
   },
   "repository": {
     "type": "git",
