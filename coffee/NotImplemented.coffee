@@ -2,7 +2,7 @@ CustomError = require './CustomError'
 
 class NotImplemented extends CustomError
   setDefaults: ->
-    @message = "Not implemented."
+    @message ?= "Not implemented."
     super()
 
 module.exports = NotImplemented

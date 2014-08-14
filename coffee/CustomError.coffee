@@ -10,7 +10,7 @@ class CustomError
     @setDefaults()
 
   setDefaults: ->
-    @name = @constructor.name unless @name?
+    @name ?= @constructor.name
 
   setPayload: (params) ->
     @payload = @constructPayload params
